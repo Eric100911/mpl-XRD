@@ -184,7 +184,7 @@ The LaTeX template for Experiment Report in Modern Physics of Tsinghua Universit
 \newcommand\empauthor[2]{
 \author{
 \sihao\kaishu #1\makebox{$^{\text{*}}$} ， #2\makebox{{$^\dagger$}} \\[0.1cm]
-\liuhao \kaishu ~~清华大学~~物理系，北京~~100084\ 
+\liuhao \kaishu ~~清华大学~~致理书院，北京~~100084\ 
 }
 }
 
