@@ -62,6 +62,8 @@ The LaTeX template for Experiment Report in Modern Physics of Tsinghua Universit
 \usepackage{anyfontsize}
 \usepackage{hyperref}
 \usepackage{tabu}
+\usepackage{tabular}
+\usepackage{tabularx}
 \usepackage{longtable}
 \usepackage{makecell}
 
