@@ -1,5 +1,0 @@
-Fit Increasing Current: slope = 1.057142857142857e-05, intercept = 0.01065714285714286, r_value = 0.9979972669929648
-Fit Decreasing Current: slope = 1.0642857142857145e-05, intercept = 0.010900000000000002, r_value = 0.9996173541022477
-Fit Increasing Current: slope = 1.5535714285714275e-05, intercept = 0.11621428571428571, r_value = 0.9999392313291
-Fit Decreasing Current: slope = 1.55e-05, intercept = 0.1163, r_value = 0.9999256809482087
-
