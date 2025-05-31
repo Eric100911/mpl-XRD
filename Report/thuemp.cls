@@ -56,6 +56,9 @@ The LaTeX template for Experiment Report in Modern Physics of Tsinghua Universit
 \usepackage{float}
 \usepackage{calc}
 \usetikzlibrary{calc}
+\usetikzlibrary{circuits.ee.IEC}
+% 在导言区添加 circuitikz 包
+\usepackage{circuitikz}
 \usepackage{environ}
 \usepackage{lmodern}
 \usepackage{unicode-math}
@@ -131,6 +134,8 @@ The LaTeX template for Experiment Report in Modern Physics of Tsinghua Universit
   \end{tikzpicture}
 }
 
+\ctikzset{bipoles/resistor/height=0.3} % 调整电阻符号大小
+\ctikzset{bipoles/resistor/width=0.5}
 
 \NewEnviron{empAbstract}{
 \vspace{-3em}
