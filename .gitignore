@@ -1,6 +1,9 @@
-.DS_Store
+*/.DS_Store
 REF/*
 *.pptx
 *.xlsx
 *.docx
+*.jip
+*.rar
 Prep/*
+PDF*
