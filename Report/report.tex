@@ -50,13 +50,13 @@
 
 所使用的X射线仪中【如图...】，X射线管以及探测器可相对于样品托架的法向进行对称转动，保持X射线探测方向与入射方向满足平面反射关系；在此过程中，X射线管发射出波长一定的X射线，经过托架上的样品衍射后，部分X射线进入探测器，其强度与衍射角$\theta$关系即被记录下来，形成X射线衍射谱。本实验所采用的X射线管靶材为$\text{Cu}$，使用特征谱线$\text{Cu~K\alpha}$（$\lambda = 1.54059~\angstrom$）设置电压$38~\text{kV}$，电流$10~\text{mA}$，在X射线管与探测器夹角$2\theta$取$20^\circ \~ 120^\circ$的区间内，选择步长$0.03^\circ$，对样品X射线衍射谱进行测绘。
 
-本实验所使用的样品中，已知化学组分的有多晶硅粉末（$\text{Si}$）、氯化钠粉末（$\text{NaCl}$）、氯化钠单晶（$\text{Si}$）、铜（$\text{Cu}$），钼（$\text{Mo}$），石墨烯粉末（$\text{C}$）、石墨粉末（$\text{C}$）、金刚石粉末（$\text{Si}$），另有一份白色粉末状试样化学成分尚待本次实验测定。
+本实验所使用的样品中，已知化学组分的有多晶硅粉末（$\text{Si}$）、氯化钠粉末（$\text{NaCl}$）、氯化钠单晶（$\text{Si}$）、铜（$\text{Cu}$），钼（$\text{Mo}$），石墨烯粉末（$\text{C}$）、石墨粉末（$\text{C}$）、金刚石粉末（$\text{Si}$），另有一份白色粉末状双组分混合物A尚待本次实验测定。
 
 \section{实验结果与分析}
 
-\subsection{多晶硅的X射线衍射谱测量}
+\subsection{多晶硅（$\text{Si}$）的X射线衍射谱测量}
 
-\subsubsection{多晶硅X射线衍射峰分布的理论分析}
+\subsubsection{多晶硅晶型与X射线衍射峰分布的理论分析}
 
 首先对多晶硅X射线衍射峰分布进行分析：在晶体衍射中，对各个晶面以及相应晶面间距$d$，其衍射峰对应衍射角$\theta$满足Bragg公式：
 
@@ -117,7 +117,7 @@
 \label{eq:si_diff_patt}
 \end{equation}
 
-\subsubsection{多晶硅X射线衍射实验数据对比}
+\subsubsection{多晶硅X射线衍射实验数据}
 
 在$2\theta$取$20.0^\circ \sim 120.0^\circ$范围内进行扫描，得到谱图以及Jade软件寻峰结果如下：
 
@@ -202,6 +202,13 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 对多晶硅样品，借助于Nelson-Reily外推法，有如下外推结果：
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Silicon-extrapolation.png}
+    \caption{多晶硅样品Nelson-Riley外推法测量结果图}
+    \label{fig:si_xrd_extrapol}
+\end{figure}
+
 \begin{table}[H]
     \centering
     \captionnamefont{\wuhao\bf\heiti}
@@ -218,11 +225,428 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 表\ref{tab:si_xrd_extrapol}中给出的$a_0$的测量误差仅计入了外推的统计不确定度，这较于实际总不确定度仍偏小。即便如此，与PDF卡片所给参考值$a_0^{\text{Si, PDF}} = $的差值也已在不确定度范围内，进一步确认实验仪器以及分析方法可靠。
 
-\subsection{}
+\subsection{单晶氯化钠（$\text{NaCl}$）和多晶氯化钠X射线衍射谱测量}
+
+\subsection{多晶氯化钠晶型与X射线衍射峰分布的理论分析}
+
+多晶氯化钠的晶体结构为面心立方，晶胞包含4个原子，原子分数坐标为：
+
+\begin{align*}
+(0,0,0),\quad &(0,\frac{1}{2},\frac{1}{2}),\quad (\frac{1}{2},0,\frac{1}{2}),\quad (\frac{1}{2},\frac{1}{2},0) \\
+(\frac{1}{4},\frac{1}{4},\frac{1}{4}),\quad &(\frac{1}{4},\frac{3}{4},\frac{3}{4}),\quad (\frac{3}{4},\frac{1}{4},\frac{3}{4}),\quad (\frac{3}{4},\frac{3}{4},\frac{1}{4})
+\end{align*}
+
+代入式\ref{eq:structure_factor}计算，得到结构因子：
+
+\begin{equation}
+    F_{hkl}^{\text{NaCl}} = f_{Na} + f_{Cl} \left[1 + e^{\pi i (h+k)} + e^{\pi i (h+l)} + e^{\pi i (k+l)}\right]
+    \label{eq:nacl_struct_fac}
+\end{equation}
+
+这就给出其消光特性：
+
+以及其衍射峰分布：
+
+\begin{equation}
+    \sin{\theta_1} : \sin{\theta_2} :\sin{\theta_3} : \sin{\theta_4} : \cdots = 1 : 2 : 3 : 4 : \cdots
+    \label{eq:nacl_diff_patt}
+\end{equation}
+
+\subsubsection{多晶氯化钠的的X射线衍射谱测量}
+
+使用氯化钠晶体粉末在$2\theta$取$20.0^\circ \sim 120.0^\circ$范围内进行扫描，得到谱图以及Jade软件寻峰结果如下：  
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/NaCl-multi.png}
+    \caption{多晶氯化钠粉末的X射线衍射谱图}
+    \label{fig:nacl_xrd_multi}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{多晶氯化钠粉末X射线衍射谱寻峰结果表}
+    \label{tab:nacl_xrd_multi}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+此处注意到各衍射峰极大对应衍射角$\theta$满足比例关系：
+
+\begin{equation}
+    \sin{\theta_1} : \sin{\theta_2} :\sin{\theta_3} : \sin{\theta_4} : \cdots = 1 : 2 : 3 : 4 : \cdots
+    \label{eq:nacl_diff_patt}
+\end{equation}
+
+这与多晶硅样品的衍射峰分布（式\ref{eq:si_diff_patt}）有明显不同，且符合式\ref{eq:nacl_diff_patt}，这表明多晶氯化钠样品的确为面心立方晶体结构。
+
+\subsubsection{单晶氯化钠的的X射线衍射谱测量}
+
+借助一金属制样品托架装夹单晶氯化钠，在$2\theta$取$20.0^\circ \sim 120.0^\circ$范围内进行扫描，得到谱图以及Jade软件寻峰结果如下：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/NaCl-single.png}
+    \caption{单晶氯化钠的X射线衍射谱图}
+    \label{fig:nacl_xrd_single}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{单晶氯化钠X射线衍射谱寻峰结果表}
+    \label{tab:nacl_xrd_single}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
 
 \subsubsection{样品托架本底的排除}
 
+在单晶氯化钠的X射线衍射谱中，出现了一个高度显著低于其他衍射峰的衍射峰，位于$2\theta \approx 38^\circ$处。经过与氯化钠的PDF卡片初步比对，发现此处并非氯化钠的衍射峰，据此推断该衍射峰可能是样品托架的本底信号。为确证这一点，将样品托架空载进行X射线衍射测量，得到其衍射谱图以及Jade软件寻峰结果如下：
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Background-from-manifold.png}
+    \caption{样品托架空载的X射线衍射谱图}
+    \label{fig:nacl_xrd_holder}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{样品托架空载X射线衍射谱寻峰结果表}
+    \label{tab:nacl_xrd_holder}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+结合峰位置以及相对强度，可以看到，样品托架的本底信号确实在$2\theta \approx 38^\circ$处有一个显著衍射峰。由此可以确认单晶氯化钠的X射线衍射谱中该处的衍射峰确实是样品托架的本底信号。
+
+\subsubsection{单晶氯化钠与多晶氯化钠X射线衍射谱对比}
+
+将单晶氯化钠的X射线衍射谱与多晶氯化钠的X射线衍射谱进行对比，我们注意到，
+
+\subsubsection{从多晶氯化钠X射线衍射谱测定氯化晶格常数}
+
+根据表\ref{tab:nacl_xrd_multi}当中数据进行Nelson-Riley外推，得到多晶氯化钠样品的晶格常数$a_0$的测量结果如下：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/NaCl-extrapolation.png}
+    \caption{多晶氯化钠样品Nelson-Riley外推法测量结果图}
+    \label{fig:nacl_xrd_extrapol}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{Nelson-Riley外推法测量氯化钠晶体晶格常数数据表}
+    \label{tab:nacl_xrd_extrapol}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+所得结果与PDF卡片所给参考值$a_0^{\text{NaCl, PDF}} = 5.6402~\text{\si\angstrom}$的差值在不确定度范围内，符合较好。
+
+\subsection{铜（$\text{Cu}$）和钼（$\text{Mo}$）的X射线衍射谱测量}
+
+\subsubsection{体心立方晶型晶体的X射线衍射峰分布的理论分析}
+
+体心立方晶型晶体的晶胞包含2个原子，原子分数坐标为：
+
+\begin{align*}
+(0,0,0),\quad &(0,\frac{1}{2},\frac{1}{2}),\quad (\frac{1}{2},0,\frac{1}{2}),\quad (\frac{1}{2},\frac{1}{2},0) \\
+(\frac{1}{4},\frac{1}{4},\frac{1}{4}),\quad &(\frac{1}{4},\frac{3}{4},\frac{3}{4}),\quad (\frac{3}{4},\frac{1}{4},\frac{3}{4}),\quad (\frac{3}{4},\frac{3}{4},\frac{1}{4})
+\end{align*}
+
+同样基于式\ref{eq:structure_factor}，可以得到其结构因子：
+\begin{equation}
+    F_{hkl}^{\text{BCC}} = f \left[1 + e^{\pi i (h+k)} + e^{\pi i (h+l)} + e^{\pi i (k+l)}\right]
+    \label{eq:bcc_struct_fac}
+\end{equation}
+
+这就给出其消光特性：
+
+以及其衍射峰分布：
+
+\begin{equation}
+    \sin{\theta_1} : \sin{\theta_2} :\sin{\theta_3} : \sin{\theta_4} : \cdots = 1 : 2 : 3 : 4 : \cdots
+    \label{eq:bcc_diff_patt}
+\end{equation}
+
+\subsubsection{铜X射线衍射谱测量}
+
+在$2\theta$取$20.0^\circ \sim 98.3^\circ$范围内进行扫描，得到谱图以及Jade软件寻峰结果如下：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Copper.png}
+    \caption{铜的X射线衍射谱图}
+    \label{fig:cu_xrd}
+\end{figure}
+
+
+\begin{table}
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{铜X射线衍射谱寻峰结果表}
+    \label{tab:cu_xrd}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection{钼X射线衍射谱测量}
+
+在$2\theta$取$20.0^\circ \sim 150^\circ$范围内进行扫描，得到谱图以及Jade软件寻峰结果如下：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Molybdenum.png}
+    \caption{钼的X射线衍射谱图}
+    \label{fig:mo_xrd}
+\end{figure}
+
+\begin{table}
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{钼X射线衍射谱寻峰结果表}
+    \label{tab:mo_xrd}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection{铜和钼的X射线衍射谱对比以及晶型分析}
+
+由表\ref{tab:cu_xrd}和表\ref{tab:mo_xrd}中的数据可以看到，铜和钼的X射线衍射谱分别表现出如下分布特征：
+
+\begin{itemize}
+    \item 铜的X射线衍射谱中，衍射峰位置满足$\sin{\theta_1} : \sin{\theta_2} :\sin{\theta_3} : \sin{\theta_4} : \cdots = 1 : 2 : 3 : 4 : \cdots$，符合体心立方晶型晶体的衍射峰分布特征（式\ref{eq:bcc_diff_patt}）。
+    \item 钼的X射线衍射谱中，衍射峰位置满足$\sin{\theta_1} : \sin{\theta_2} :\sin{\theta_3} : \sin{\theta_4} : \cdots = 1 : 2 : 3 : 4 : \cdots$，同样符合体心立方晶型晶体的衍射峰分布特征（式\ref{eq:bcc_diff_patt}）。
+\end{itemize}
+
+由此可以确认，
+
+\subsubsection{从铜和钼X射线衍射谱测定晶格常数}
+
+根据表\ref{tab:cu_xrd}和表\ref{tab:mo_xrd}当中数据进行Nelson-Riley外推，得到铜和钼样品的晶格常数$a_0$的测量结果如下：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Cu-extrapolation.png}
+    \caption{铜样品Nelson-Riley外推法测量结果图}
+    \label{fig:cu_xrd_extrapol}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{Nelson-Riley外推法测量铜晶体晶格常数数据表}
+    \label{tab:cu_xrd_extrapol}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Mo-extrapolation.png}
+    \caption{钼样品Nelson-Riley外推法测量结果图}
+    \label{fig:mo_xrd_extrapol}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{Nelson-Riley外推法测量钼晶体晶格常数数据表}
+    \label{tab:mo_xrd_extrapol}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+以上实验结果和PDF卡片给出的参考值符合均较好。
+
+\subsection{石墨、石墨烯和金刚石的X射线衍射谱测量}
+
+\subsubsection{石墨的X射线衍射谱测量}
+
+在$2\theta$取$20.0^\circ \sim 120.0^\circ$范围内进行扫描，得到谱图以及Jade软件寻峰结果如下：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Graphite.png}
+    \caption{石墨的X射线衍射谱图}
+    \label{fig:graphite_xrd}
+\end{figure}
+
+\begin{table}
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{石墨X射线衍射谱寻峰结果表}
+    \label{tab:graphite_xrd}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+可以看到石墨最主要的衍射峰位于$2\theta \approx 26.5^\circ$处，且其他峰衍射强度均较弱。这一点很明显地与前面所见的各类晶体的衍射谱不同。考虑到石墨的层状结构，其层与层之间的相对位置并不十分规整，因而其衍射谱中最主要的衍射峰仅有层内原子间距的衍射峰。除此之外，最高的的衍射峰对应的晶面指数应推断为$(【】)$，提示其层间原子间距仍较为固定。
+
+\subsubsection{石墨烯的X射线衍射谱测量}
+
+在$2\theta$取$20.0^\circ \sim 120.0^\circ$范围内对石墨烯粉末进行扫描，得到谱图以及Jade软件寻峰结果如下： 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Graphene.png}
+    \caption{石墨烯的X射线衍射谱图}
+    \label{fig:graphene_xrd}
+\end{figure}
+
+\begin{table}
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{石墨烯X射线衍射谱寻峰结果表}
+    \label{tab:graphene_xrd}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+
+\subsubsection{金刚石的X射线衍射谱测量}
+
+在$2\theta$取$20.0^\circ \sim 120.0^\circ$范围内对金刚石粉末进行扫描，得到谱图以及Jade软件寻峰结果如下：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Diamond.png}
+    \caption{金刚石的X射线衍射谱图}
+    \label{fig:diamond_xrd}
+\end{figure}
+
+\begin{table}
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{金刚石X射线衍射谱寻峰结果表}
+    \label{tab:diamond_xrd}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+
+\subsubsection{石墨、石墨烯和金刚石的X射线衍射谱对比}
+
+\subsection{对一组分未知的混合物A进行定性物相分析}
+
+\subsubsection{混合物A的X射线衍射谱测量}
+
+在$2\theta$取$20.0^\circ \sim 120.0^\circ$范围内对混合物A进行扫描，得到谱图以及Jade软件寻峰结果如下：
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[options]{../Data/Mixture-A.png}
+    \caption{混合物A的X射线衍射谱图}
+    \label{fig:mixture_a_xrd}
+\end{figure}
+
+\begin{table}
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{混合物A的X射线衍射谱寻峰结果表}
+    \label{tab:mixture_a_xrd}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection{混合物A组分分析}
+
+在扫描中，注意到以下这一组峰与此前观察过的氯化钠的衍射峰位置以及相对强度均非常接近：
+
+\begin{table}p[H]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{混合物A中与氯化钠衍射峰位置接近的衍射峰表}
+    \label{tab:mixture_a_nacl_peaks}
+    \liuhao
+    \begin{tabular}{ccccc}
+        \toprule
+        \midrule
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+由此可以推测，混合物A中很可能含有氯化钠。
+
+进一步考察余下的衍射峰位置以及相对强度，观察到其衍射峰分布模式：
+
+\begin{equation}
+    \sin{\theta_1} : \sin{\theta_2} :\sin{\theta_3} : \sin{\theta_4} : \cdots = 1 : 2 : 3 : 4 : \cdots
+    \label{eq:mixture_a_diff_patt}
+\end{equation}
+
+这符合【】晶型的X射线衍射谱特征。对此进一步进行标定：
+
+结合消光特性以及测得的晶格常数，查阅PDF卡片，发现混合物A中可能含有【】晶型的【】。
 
 \section{结论}
 
