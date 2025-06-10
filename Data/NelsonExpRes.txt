@@ -1,0 +1,74 @@
+
+Processing Data/XRD_fit.C...
+Skipping table '多晶硅粉末X射线衍射谱寻峰结果表' - insufficient data
+Skipping table '多晶硅粉末X射线衍射谱三强峰法匹配结果表' - insufficient data
+>Fit Results:
+  多晶硅粉末X射线衍射峰晶面指数标定表:
+    Lattice Constant (a): 5.4283 #pm 0.0007 #AA
+    Slope: 0.0020 #pm 0.0002 #AA
+    R²: 0.9995
+>End of Fit Results
+
+Skipping table 'Nelson-Riley外推法测量硅晶体晶格常数数据表' - insufficient data
+>Fit Results:
+  多晶氯化钠粉末X射线衍射谱寻峰与标定结果表:
+    Lattice Constant (a): 5.6418 #pm 0.0007 #AA
+    Slope: 0.0005 #pm 0.0002 #AA
+    R²: 0.1762
+>End of Fit Results
+
+>Fit Results:
+  单晶氯化钠X射线衍射谱寻峰与标定结果表:
+    Lattice Constant (a): 5.6843 #pm 0.0008 #AA
+    Slope: -0.0092 #pm 0.0001 #AA
+    R²: 0.0721
+>End of Fit Results
+
+>Fit Results:
+  样品托架空载X射线衍射谱寻峰与标定结果表:
+    Lattice Constant (a): 4.0864 #pm 0.0090 #AA
+    Slope: -0.0035 #pm 0.0017 #AA
+    R²: 1.0000
+>End of Fit Results
+
+Skipping table 'Nelson-Riley外推法测量氯化钠晶体晶格常数数据表' - insufficient data
+>Fit Results:
+  钼X射线衍射谱寻峰与标定结果表:
+    Lattice Constant (a): 3.1473 #pm 0.0008 #AA
+    Slope: 0.0009 #pm 0.0003 #AA
+    R²: 0.4791
+>End of Fit Results
+
+>Fit Results:
+  铜X射线衍射谱寻峰与标定结果表:
+    Lattice Constant (a): 3.6147 #pm 0.0013 #AA
+    Slope: -0.0004 #pm 0.0004 #AA
+    R²: 0.8556
+>End of Fit Results
+
+Skipping table 'Nelson-Riley外推法测量铜晶体晶格常数数据表' - insufficient data
+Skipping table 'Nelson-Riley外推法测量钼晶体晶格常数数据表' - insufficient data
+>Fit Results:
+  石墨X射线衍射谱寻峰与标定结果表:
+    Lattice Constant (a): -5.1153 #pm 0.0030 #AA
+    Slope: 1.3859 #pm 0.0004 #AA
+    R²: 1.0000
+>End of Fit Results
+
+>Fit Results:
+  石墨烯X射线衍射谱寻峰与标定结果表:
+    Lattice Constant (a): -2.4867 #pm 0.0028 #AA
+    Slope: 1.0762 #pm 0.0004 #AA
+    R²: 1.0000
+>End of Fit Results
+
+>Fit Results:
+  金刚石X射线衍射谱寻峰与标定结果表:
+    Lattice Constant (a): 3.5658 #pm 0.0023 #AA
+    Slope: 0.0012 #pm 0.0004 #AA
+    R²: 0.9926
+>End of Fit Results
+
+Skipping table '混合物A的X射线衍射谱寻峰结果表' - insufficient data
+Skipping table '混合物A与氯化钠衍射峰位置对照表' - insufficient data
+Skipping table '混合物A与氯化钠以及【】衍射峰位置对照表' - insufficient data
