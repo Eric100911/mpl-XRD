@@ -278,7 +278,19 @@ void performNelsonRileyFit(const std::vector<XRDTable>& tables) {
         // 保存为单独PDF
         std::string filename = "Fit_" + table.label + ".png";
         canvas->SaveAs(filename.c_str());
-        
+
+        // Print fit results, including slope, intercept (lattice const.), and R²
+        // Also uncertainty in the lattice constant and slope.
+        puts(">Fit Results:");
+        printf("  %s:\n", table.caption.c_str());
+        printf("    Lattice Constant (a): %.4f #pm %.4f #AA\n", 
+               fitFunc->GetParameter(0), fitFunc->GetParError(0));
+        printf("    Slope: %.4f #pm %.4f #AA\n",
+                fitFunc->GetParameter(1), fitFunc->GetParError(1));
+        printf("    R²: %.4f\n", rSquared);
+        puts(">End of Fit Results\n");
+
+
         // 清理当前拟合资源
         delete canvas;
         delete gr;
@@ -286,7 +298,7 @@ void performNelsonRileyFit(const std::vector<XRDTable>& tables) {
     }
 }
 
-void XRD_fit(const char* filename = "experiment_report.tex") {
+void XRD_fit(const char* filename = "Report/report.tex") {
     // 从LaTeX文件中提取所有表格
     auto tables = extractTablesFromLatex(filename);
     
