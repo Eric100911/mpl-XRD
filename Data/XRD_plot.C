@@ -63,7 +63,7 @@ void XRD_plot(std::string exp_data_file = "exp_data.txt",
     
     // 自动检测特征峰
     TSpectrum *spec = new TSpectrum(20);
-    int npeaks = spec->Search(h, 2, "", 0.01);
+    int npeaks = spec->Search(h, 2, "", 0.007);
     
     double *xpeaks = spec->GetPositionX();
     double *ypeaks = spec->GetPositionY();
