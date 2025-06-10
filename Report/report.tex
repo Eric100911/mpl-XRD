@@ -133,39 +133,7 @@
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{多晶硅粉末X射线衍射谱寻峰结果表}
-    \label{tab:si_xrd}
-    \liuhao
-    \begin{tabular}{ccccc}
-        \toprule
-        \midrule
-        \bottomrule
-    \end{tabular}
-\end{table}
-
-首先使用三强峰方法进行匹配以及比对：选取衍射强度最强的三个衍射峰，与PDF卡片中所载相对强度最大的衍射峰进行对比。通过Jade 9软件调取PDF\#98-000-0396卡片进行对比，结果如下：
-
-\begin{table}[H]
-    \centering
-    \captionnamefont{\wuhao\bf\heiti}
-    \captiontitlefont{\wuhao\bf\heiti}
-    \caption{多晶硅粉末X射线衍射谱三强峰法匹配结果表}
-    \label{tab:si_xrd_tri_comp}
-    \liuhao
-    \begin{tabular}{ccccc}
-        \toprule
-        \midrule
-        \bottomrule
-    \end{tabular}
-\end{table}
-
-在以上几个衍射峰中，可以看到，衍射角度和相对强度符合得很好。进一步结合PDF卡片，标出其他衍射峰所对应晶面指数：
-
-\begin{table}[H]
-    \centering
-    \captionnamefont{\wuhao\bf\heiti}
-    \captiontitlefont{\wuhao\bf\heiti}
-    \caption{多晶硅粉末X射线衍射峰晶面指数标定表}
+    \caption{多晶硅粉末X射线衍射谱寻峰与标定结果表}
     \label{tab:si_xrd_indexed}
     \liuhao
     \begin{tabular}{ccccc}
@@ -218,7 +186,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Data/Silicon-extrapolation.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Fit_si.png}
     \caption{多晶硅样品Nelson-Riley外推法测量结果图}
     \label{fig:si_xrd_extrapol}
 \end{figure}
@@ -230,9 +198,12 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \caption{Nelson-Riley外推法测量硅晶体晶格常数数据表}
     \label{tab:si_xrd_extrapol}
     \liuhao
-    \begin{tabular}{ccccc}
+    \begin{tabular}{ccc}
         \toprule
+        斜率 & 截距（拟合晶格常数） & 相关系数 \\
+        $k/\text{\si\angstrom}$ & $a_0/\text{\si\angstrom}$ & $r^2$ \\
         \midrule
+        $0.0020 \pm 0.0002$ & $5.4283 \pm 0.0007$ & $0.9995$ \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -411,7 +382,10 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        斜率 & 截距（拟合晶格常数） & 相关系数 \\
+        $k/\text{\si\angstrom}$ & $a_0/\text{\si\angstrom}$ & $r^2$ \\
         \midrule
+        $0.0005 \pm 0.0002$ & $5.6418 \pm 0.0007$ & $0.1762$ \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -452,7 +426,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Data/Molybdenum.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Mo-multi.png}
     \caption{钼的X射线衍射谱图}
     \label{fig:mo_xrd}
 \end{figure}
@@ -514,7 +488,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Data/Copper.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Cu-multi.png}
     \caption{铜的X射线衍射谱图}
     \label{fig:cu_xrd}
 \end{figure}
@@ -552,7 +526,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Data/Cu-extrapolation.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Fit_cu_xrd.png}
     \caption{铜样品Nelson-Riley外推法测量结果图}
     \label{fig:cu_xrd_extrapol}
 \end{figure}
@@ -564,16 +538,19 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \caption{Nelson-Riley外推法测量铜晶体晶格常数数据表}
     \label{tab:cu_xrd_extrapol}
     \liuhao
-    \begin{tabular}{ccccc}
+    \begin{tabular}{ccc}
         \toprule
+        斜率 & 截距（拟合晶格常数） & 相关系数 \\
+        $k/\text{\si\angstrom}$ & $a_0/\text{\si\angstrom}$ & $r^2$\\
         \midrule
+        $0.0004 \pm 0.0004$ & $3.6147 \pm 0.0013$ & $0.8556$ \\
         \bottomrule
     \end{tabular}
 \end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{../Data/Mo-extrapolation.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Fit_mo_xrd.png}
     \caption{钼样品Nelson-Riley外推法测量结果图}
     \label{fig:mo_xrd_extrapol}
 \end{figure}
@@ -585,11 +562,12 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \caption{Nelson-Riley外推法测量钼晶体晶格常数数据表}
     \label{tab:mo_xrd_extrapol}
     \liuhao
-    \begin{tabular}{ccccc}
+    \begin{tabular}{ccc}
         \toprule
-        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
-        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$\\
+        斜率 & 截距（拟合晶格常数） & 相关系数 \\
+        $k/\text{\si\angstrom}$ & $a_0/\text{\si\angstrom}$ & $r^2$\\
         \midrule
+        $0.0009 \pm 0.0003$ & $3.1473 \pm 0.0008$ & $0.4791$ \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -699,6 +677,35 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \subsubsection{石墨、石墨烯和金刚石的X射线衍射谱对比}
 
+\subsubsection{从金刚石X射线衍射谱测定晶格常数}
+
+根据表\ref{tab:diamond_xrd}当中数据进行Nelson-Riley外推，得到金刚石样品的晶格常数$a_0$的测量结果如下：  
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../Data/Fit_diamond_xrd.png}
+    \caption{金刚石样品Nelson-Riley外推法测量结果图}
+    \label{fig:diamond_xrd_extrapol}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{Nelson-Riley外推法测量金刚石晶体晶格常数数据表}
+    \label{tab:diamond_xrd_extrapol}
+    \liuhao
+    \begin{tabular}{ccc}
+        \toprule
+        斜率 & 截距（拟合晶格常数） & 相关系数 \\
+        $k/\text{\si\angstrom}$ & $a_0/\text{\si\angstrom}$ & $r^2$\\
+        \midrule
+        $0.0012 \pm 0.0004$ & $3.5658 \pm 0.0023$ & $0.9926$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+所得结果与PDF卡片所给参考值符合较好。
 
 
 \subsection{对一组分未知的混合物A进行定性物相分析}
