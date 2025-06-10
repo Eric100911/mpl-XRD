@@ -48,7 +48,7 @@
 
 本实验使用X射线衍射仪，对提供的各晶体粉末样品进行X射线衍射分析，测绘出X射线衍射谱，并使用Jade 9软件对所得衍射谱进行寻峰，结合粉末衍射文件（Powder Diffraction File, PDF）卡片进行分析比对，确认物质组成，并利用Nelson-Riley外推法，对晶格常数进行精密测量。
 
-所使用的X射线仪中【如图...】，X射线管以及探测器可相对于样品托架的法向进行对称转动，保持X射线探测方向与入射方向满足平面反射关系；在此过程中，X射线管发射出波长一定的X射线，经过托架上的样品衍射后，部分X射线进入探测器，其强度与衍射角$\theta$关系即被记录下来，形成X射线衍射谱。本实验所采用的X射线管靶材为$\text{Cu}$，使用特征谱线$\text{Cu~K\alpha}$（$\lambda = 1.54059~\angstrom$）设置电压$38~\text{kV}$，电流$10~\text{mA}$，在X射线管与探测器夹角$2\theta$取$20^\circ \~ 120^\circ$的区间内，选择步长$0.03^\circ$，对样品X射线衍射谱进行测绘。
+所使用的X射线仪中【如图...】，X射线管以及探测器可相对于样品托架的法向进行对称转动，保持X射线探测方向与入射方向满足平面反射关系；在此过程中，X射线管发射出波长一定的X射线，经过托架上的样品衍射后，部分X射线进入探测器，其强度与衍射角$\theta$关系即被记录下来，形成X射线衍射谱。本实验所采用的X射线管靶材为$\text{Cu}$，使用特征谱线$\text{Cu~K\alpha}$（$\lambda = 1.54059~\si{\angstrom}$）设置电压$38~\text{kV}$，电流$10~\text{mA}$，在X射线管与探测器夹角$2\theta$取$20^\circ \~ 120^\circ$的区间内，选择步长$0.03^\circ$，对样品X射线衍射谱进行测绘。
 
 本实验所使用的样品中，已知化学组分的有多晶硅粉末（$\text{Si}$）、氯化钠粉末（$\text{NaCl}$）、氯化钠单晶（$\text{Si}$）、铜（$\text{Cu}$），钼（$\text{Mo}$），石墨烯粉末（$\text{C}$）、石墨粉末（$\text{C}$）、金刚石粉末（$\text{Si}$），另有一份白色粉末状双组分混合物A尚待本次实验测定。
 
@@ -82,7 +82,7 @@
 晶面在衍射极大时的衍射强度与晶胞内原子位置有关，表现为受到以下结构因子调制：
 
 \begin{equation}
-    F_{hkl} = \sum_{j = 1}^{N} f_j exp{2\pi i (hx_j + ky_j + lz_j)}
+    F_{hkl} = \sum_{j = 1}^{N} f_j \exp{2\pi i (hx_j + ky_j + lz_j)}
     \label{eq:structure_factor}
 \end{equation}
 
@@ -124,7 +124,7 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Silicon-multi.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Silicon-multi.png}
     \caption{多晶硅粉末的X射线衍射谱图}
     \label{fig:si_xrd}    
 \end{figure}
@@ -143,7 +143,7 @@
     \end{tabular}
 \end{table}
 
-首先使用三强峰方法进行匹配以及比对：选取衍射强度最强的三个衍射峰，与PDF卡片中所载相对强度最大的衍射峰进行对比。通过Jade 9软件调取PDF#98-000-0396卡片进行对比，结果如下：
+首先使用三强峰方法进行匹配以及比对：选取衍射强度最强的三个衍射峰，与PDF卡片中所载相对强度最大的衍射峰进行对比。通过Jade 9软件调取PDF\#98-000-0396卡片进行对比，结果如下：
 
 \begin{table}[H]
     \centering
@@ -201,13 +201,13 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \end{cases}
 \end{equation}
 
-同年，Nelson和Riley使用$\text{Cu_9Al_4}$样品进行X射线晶体衍射实验，确认这一函数可以在$\theta > 30^\circ$范围内较好描述不同吸收度样品的系统误差。实际上，考虑到$f\left(\frac{\pi}{2}\right) = 0$，可以将各个衍射峰处测得的晶格常数$a$与相应衍射角$\theta$进行$a-f(\theta)$作图，并且进行线性外推，取$\theta=\frac{\pi}{2}$时外推值，即纵轴截距$a_0$作为实际测量值。此即Nelson-Reily外推法。
+同年，Nelson和Riley使用$\text{Cu}_9\text{Al}_4$样品进行X射线晶体衍射实验，确认这一函数可以在$\theta > 30^\circ$范围内较好描述不同吸收度样品的系统误差。实际上，考虑到$f\left(\frac{\pi}{2}\right) = 0$，可以将各个衍射峰处测得的晶格常数$a$与相应衍射角$\theta$进行$a-f(\theta)$作图，并且进行线性外推，取$\theta=\frac{\pi}{2}$时外推值，即纵轴截距$a_0$作为实际测量值。此即Nelson-Reily外推法。
 
 对多晶硅样品，借助于Nelson-Reily外推法，有如下外推结果：
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Silicon-extrapolation.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Silicon-extrapolation.png}
     \caption{多晶硅样品Nelson-Riley外推法测量结果图}
     \label{fig:si_xrd_extrapol}
 \end{figure}
@@ -235,8 +235,16 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 多晶氯化钠的晶体结构为面心立方，晶胞包含8个原子，原子分数坐标为：
 
 \begin{align*}
-(0,0,0),\quad &(0,\frac{1}{2},0), \quad (\frac{1}{2},0,0),\quad (0,0,\frac{1}{2}) \\
-(\frac{1}{2},\frac{1}{2},0),\quad &(\frac{1}{2},0,\frac{1}{2}),\quad (0,\frac{1}{2},\frac{1}{2}),\quad (\frac{1}{2},\frac{1}{2},\frac{1}{2})
+\text{Na} &:
+\quad &\left(0,0,0\right),
+\quad &\left(\frac{1}{2},\frac{1}{2},0\right),
+\quad &\left(\frac{1}{2},0,\frac{1}{2}\right),
+\quad &\left(0,\frac{1}{2},\frac{1}{2}\right)\\
+\text{Cl} &:
+\quad &\left(0,\frac{1}{2},0\right),
+\quad &\left(\frac{1}{2},0,0\right),
+\quad &\left(0,0,\frac{1}{2}\right),
+\quad &\left(\frac{1}{2},\frac{1}{2}, \frac{1}{2}\right) \\
 \end{align*}
 
 代入式\ref{eq:structure_factor}计算，得到结构因子：
@@ -266,7 +274,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/NaCl-multi.png}
+    \includegraphics[width=0.8\linewidth]{../Data/NaCl-multi.png}
     \caption{多晶氯化钠粉末的X射线衍射谱图}
     \label{fig:nacl_xrd_multi}
 \end{figure}
@@ -275,19 +283,31 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{多晶氯化钠粉末X射线衍射谱寻峰结果表}
+    \caption{多晶氯化钠粉末X射线衍射谱寻峰与标定结果表}
     \label{tab:nacl_xrd_multi}
     \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
+        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$ \\
         \midrule
+        13.668 &  2.6 & (1,1,1) & 3.2598 & 5.6463 \\
+        15.848 &  100 & (2,0,0) & 2.8208 & 5.6416 \\
+        22.693 & 23.9 & (2,2,0) & 1.9967 & 5.6475 \\
+        26.908 &  1.1 & (3,1,1) & 1.7021 & 5.6453 \\
+        28.211 &  6.5 & (2,2,2) & 1.6295 & 5.6448 \\
+        33.111 &  8.4 & (4,0,0) & 1.4101 & 5.6406 \\
+        37.630 &  9.0 & (4,2,0) & 1.2616 & 5.6422 \\
+        41.979 &  5.9 & (4,2,2) & 1.1517 & 5.6420 \\
+        50.537 &  1.1 & (4,4,0) & 0.9978 & 5.6442 \\
+        55.015 &  3.4 & (4,4,2) & 0.9402 & 5.6412 \\
         \bottomrule
     \end{tabular}
 \end{table}
 
 此处注意到各衍射峰极大对应衍射角$\theta$与多晶硅样品的衍射峰分布（式\ref{eq:si_diff_patt}）有明显不同，且符合式\ref{eq:nacl_diff_patt}，这表明多晶氯化钠样品的确为面心立方晶体结构。
 
-此外，在峰强度方面，可以注意到无论是在PDF卡片中，还是在本实验中，“全奇”峰的强度均显著低于“全偶”峰的强度，甚而(3,3,1)晶面衍射峰在本实验中几乎不可见。这应是来自于形状因子中$(f_\text{Na} + f_\text{Cl} (-1)^{h+k+l})$一项的调制，并且由此可见，氯化钠中钠原子和氯原子的散射因子$f_\text{Na}$和$f_\text{Cl}$的大小差异不大。
+此外，在峰强度方面，可以注意到无论是在PDF卡片中，还是在本实验中，“全奇”峰的强度均显著低于“全偶”峰的强度，甚而(3,3,1)晶面衍射峰在本实验中几乎不可见。这应是来自于形状因子中$\left[f_\text{Na} + f_\text{Cl} (-1)^{h+k+l}\right]$一项的调制，并且由此可见，氯化钠中钠原子和氯原子的散射因子$f_\text{Na}$和$f_\text{Cl}$的大小差异不大。
 
 \subsubsection{单晶氯化钠的的X射线衍射谱测量}
 
@@ -295,7 +315,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/NaCl-single.png}
+    \includegraphics[width=0.8\linewidth]{../Data/NaCl-single.png}
     \caption{单晶氯化钠的X射线衍射谱图}
     \label{fig:nacl_xrd_single}
 \end{figure}
@@ -304,12 +324,21 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{单晶氯化钠X射线衍射谱寻峰结果表}
+    \caption{单晶氯化钠X射线衍射谱寻峰与标定结果表}
     \label{tab:nacl_xrd_single}
-    \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
+        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$ \\
         \midrule
+        14.215 &  1.3 & (1,1,1) & 3.1369 & 5.4333\\
+        15.536 & 15.9 & (2,0,0) & 2.8760 & 5.7520\\
+        15.760 & 53.8 & (2,0,0) & 2.8361 & 5.6723\\
+        15.883 &  100 & (2,0,0) & 2.8146 & 5.6293\\
+        32.796 &  3.6 & (4,0,0) & 1.4221 & 5.6885\\
+        33.132 & 18.1 & (4,0,0) & 1.4093 & 5.6373\\
+        54.701 &  0.9 & (4,4,2) & 0.9438 & 5.6630\\
+        55.031 &  5.5 & (4,4,2) & 0.9400 & 5.6400\\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -320,7 +349,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Background-from-manifold.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Background-from-manifold.png}
     \caption{样品托架空载的X射线衍射谱图}
     \label{fig:nacl_xrd_holder}
 \end{figure}
@@ -329,17 +358,23 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{样品托架空载X射线衍射谱寻峰结果表}
+    \caption{样品托架空载X射线衍射谱寻峰与标定结果表}
     \label{tab:nacl_xrd_holder}
     \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
+        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$\\
         \midrule
+        19.156 & 100 & (1,1,1) & 2.3475 & 4.066 \\
+        22.251 & 6.9 & (2,0,0) & 2.0343 & 4.069 \\
         \bottomrule
     \end{tabular}
 \end{table}
 
-结合峰位置以及相对强度，可以看到，样品托架的本底信号确实在$2\theta \approx 38^\circ$处有一个显著衍射峰。由此可以确认单晶氯化钠的X射线衍射谱中该处的衍射峰确实是样品托架的本底信号。后面如未经说明，此托架的本底信号均已排除。
+结合峰位置以及相对强度，可以看到，样品托架的本底信号确实在$\theta \approx 19.2^\circ$处和$\theta \approx 22.3^\circ$处各有一个显著衍射峰。由此可以确认单晶氯化钠的X射线衍射谱中$\theta \approx 19.2^\circ$处的衍射峰确实是样品托架的本底信号。后面如未经说明，此托架的本底信号均已排除。
+
+经过比对，确认此衍射图谱与PDF卡片中铝（$Al$）的图谱相似，由此可以确认样品托架的材质为铝。
 
 \subsubsection{单晶氯化钠与多晶氯化钠X射线衍射谱对比}
 
@@ -351,7 +386,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/NaCl-extrapolation.png}
+    \includegraphics[width=0.8\linewidth]{../Data/NaCl-extrapolation.png}
     \caption{多晶氯化钠样品Nelson-Riley外推法测量结果图}
     \label{fig:nacl_xrd_extrapol}
 \end{figure}
@@ -379,12 +414,12 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 钼的晶体结构为体心立方（BCC），其晶胞包含2个原子，原子分数坐标为：
 
 \begin{align*}
-(0,0,0),\quad (\frac{1}{2},\frac{1}{2},\frac{1}{2})
+(0,0,0),\quad \left(\frac{1}{2},\frac{1}{2},\frac{1}{2}\right)
 \end{align*}
 
 同样基于式\ref{eq:structure_factor}，可以得到其结构因子：
 \begin{equation}
-    |F_{hkl}^{\text{Mo}}|^2 = 2|f_{\text{Mo}}|^2 (1+(-1)^{h+k+l})^2
+    |F_{hkl}^{\text{Mo}}|^2 = 2|f_{\text{Mo}}|^2 \left[1+(-1)^{h+k+l}\right]^2
     \label{eq:mo_struct_fac}
 \end{equation}
 
@@ -406,7 +441,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Molybdenum.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Molybdenum.png}
     \caption{钼的X射线衍射谱图}
     \label{fig:mo_xrd}
 \end{figure}
@@ -415,12 +450,21 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{钼X射线衍射谱寻峰结果表}
+    \caption{钼X射线衍射谱寻峰与标定结果表}
     \label{tab:mo_xrd}
     \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
+        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$\\
         \midrule
+        20.216 &  100 & (1, 1, 0) & 2.2291 & 3.1525 \\
+        29.291 & 21.5 & (2, 0, 0) & 1.5745 & 3.1490 \\
+        36.804 & 29.1 & (2, 1, 1) & 1.2858 & 3.1496 \\
+        43.749 & 10.0 & (2, 2, 0) & 1.1139 & 3.1508 \\
+        50.679 & 23.0 & (3, 1, 0) & 0.9957 & 3.1488 \\
+        57.998 &  2.7 & (2, 2, 2) & 0.9083 & 3.1466 \\
+        66.221 & 28.3 & (3, 1, 2) & 0.8418 & 3.1496 \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -430,13 +474,13 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 铜的晶体结构为面心立方（FCC），其晶胞包含4个原子，原子分数坐标为：
 
 \begin{align*}
-(0,0,0),\quad &(0,\frac{1}{2},\frac{1}{2}),\quad (\frac{1}{2},0,\frac{1}{2}),\quad (\frac{1}{2},\frac{1}{2},0)
+(0,0,0),\quad &\left(0,\frac{1}{2},\frac{1}{2}\right),\quad \left(\frac{1}{2},0,\frac{1}{2}\right),\quad \left(\frac{1}{2},\frac{1}{2},0\right)
 \end{align*}
 
 同样基于式\ref{eq:structure_factor}，可以得到其结构因子：
 
 \begin{equation}
-    |F_{hkl}^{\text{Cu}}|^2 = 4|f_{\text{Cu}}|^2[1 + (-1)^{h+k} + (-1)^{h+l} + (-1)^{k+l}]^2
+    |F_{hkl}^{\text{Cu}}|^2 = 4|f_{\text{Cu}}|^2\left[1 + (-1)^{h+k} + (-1)^{h+l} + (-1)^{k+l}\right]^2
     \label{eq:cu_struct_fac}
 \end{equation}
 
@@ -459,7 +503,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Copper.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Copper.png}
     \caption{铜的X射线衍射谱图}
     \label{fig:cu_xrd}
 \end{figure}
@@ -468,12 +512,19 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{铜X射线衍射谱寻峰结果表}
+    \caption{铜X射线衍射谱寻峰与标定结果表}
     \label{tab:cu_xrd}
     \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
+        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$\\
         \midrule
+        21.672 &  100 & (1,1,1) & 2.0859 & 3.6128 \\
+        25.239 & 46.3 & (2,0,0) & 1.8065 & 3.6132 \\
+        37.078 & 21.2 & (2,2,0) & 1.2777 & 3.6138 \\
+        44.991 & 23.8 & (3,1,1) & 1.0895 & 3.6136 \\
+        47.588 & 10.1 & (2,2,2) & 1.0433 & 3.6142 \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -490,7 +541,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Cu-extrapolation.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Cu-extrapolation.png}
     \caption{铜样品Nelson-Riley外推法测量结果图}
     \label{fig:cu_xrd_extrapol}
 \end{figure}
@@ -511,7 +562,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Mo-extrapolation.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Mo-extrapolation.png}
     \caption{钼样品Nelson-Riley外推法测量结果图}
     \label{fig:mo_xrd_extrapol}
 \end{figure}
@@ -525,6 +576,8 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
+        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$\\
         \midrule
         \bottomrule
     \end{tabular}
@@ -540,7 +593,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Graphite.png}
+    \includegraphics[width=0.8\linewidth]{../Data/C-Graphite-multi.png}
     \caption{石墨的X射线衍射谱图}
     \label{fig:graphite_xrd}
 \end{figure}
@@ -549,17 +602,19 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{石墨X射线衍射谱寻峰结果表}
+    \caption{石墨X射线衍射谱寻峰与标定结果表}
     \label{tab:graphite_xrd}
     \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
+        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$\\
         \midrule
         \bottomrule
     \end{tabular}
 \end{table}
 
-可以看到石墨最主要的衍射峰位于$2\theta \approx 26.5^\circ$处，且其他峰衍射强度均较弱。这一点很明显地与前面所见的各类晶体的衍射谱不同。考虑到石墨的层状结构，其层与层之间的相对位置并不十分规整，因而其衍射谱中最主要的衍射峰仅有层内原子间距的衍射峰。除此之外，最高的的衍射峰对应的晶面指数应推断为$(【】)$，提示其层间原子间距仍较为固定。
+可以看到石墨最主要的衍射峰位于$2\theta \approx 16.25^\circ$处，且其他峰衍射强度均较弱。这一点很明显地与前面所见的各类晶体的衍射谱不同。考虑到石墨的层状结构，其层与层之间的相对位置并不十分规整，因而其衍射谱中最主要的衍射峰仅有层内原子间距的衍射峰。除此之外，最高的的衍射峰对应的晶面指数应推断为$(【】)$，提示其层间原子间距仍较为固定。
 
 \subsubsection{石墨烯的X射线衍射谱测量}
 
@@ -567,7 +622,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Graphene.png}
+    \includegraphics[width=0.8\linewidth]{../Data/C-Graphene-multi.png}
     \caption{石墨烯的X射线衍射谱图}
     \label{fig:graphene_xrd}
 \end{figure}
@@ -576,11 +631,13 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{石墨烯X射线衍射谱寻峰结果表}
+    \caption{石墨烯X射线衍射谱寻峰与标定结果表}
     \label{tab:graphene_xrd}
     \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
+        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$\\
         \midrule
         \bottomrule
     \end{tabular}
@@ -594,7 +651,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Diamond.png}
+    \includegraphics[width=0.8\linewidth]{../Data/C-Diamond-multi.png}
     \caption{金刚石的X射线衍射谱图}
     \label{fig:diamond_xrd}
 \end{figure}
@@ -603,12 +660,20 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{金刚石X射线衍射谱寻峰结果表}
+    \caption{金刚石X射线衍射谱寻峰与标定结果表}
     \label{tab:diamond_xrd}
     \liuhao
     \begin{tabular}{ccccc}
         \toprule
+        衍射角 & 相对强度（面积）& 晶面指数 & 晶面间距 & 晶格常数 \\
+        $\theta_{hkl}/^\circ$ & $I_{hkl,r}$ & $(h,k,l)$ & $d_{hkl}\text{\si\angstrom}$ & $a/\text{\si\angstrom}$\\
         \midrule
+        13.256 & 100 & (0,0,2) & 3.3594 & 6.7189 \\
+        21.249 & 2.1 & (1,0,0) & 2.1254 & 2.1254 \\
+        22.301 & 6.3 &    -    & 2.0299 &   -    \\
+        27.280 & 6.5 &    -    & 1.6806 &   -    \\
+        38.783 & 2.4 &    -    & 1.2298 &   -    \\
+        41.828 & 2.0 &    -    & 1.1550 &   -    \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -627,7 +692,7 @@ Taylor和Sinclair于1945年更进一步地提出，以上所述及的各项系�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[options]{../Data/Mixture-A.png}
+    \includegraphics[width=0.8\linewidth]{../Data/Mixture.png}
     \caption{混合物A的X射线衍射谱图}
     \label{fig:mixture_a_xrd}
 \end{figure}
